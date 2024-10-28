@@ -7,8 +7,6 @@ export const Answers = ({ answers, selectedAnswer, answerState, onSelect }) => {
     shuffledAnswers.current.sort(() => Math.random() - 0.5);
   }
 
-  console.log("answer state, ", answerState);
-
   return (
     <ul id="answers">
       {shuffledAnswers.current.map((answer) => {

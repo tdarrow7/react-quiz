@@ -3,7 +3,6 @@ import quizCompleteImg from "../assets/quiz-complete.png";
 import QUESTIONS from "../Questions";
 
 export const Summary = ({ userAnswers }) => {
-  console.log("answers", userAnswers);
   let skippedCount = 1,
     correctCount = 0;
   userAnswers.forEach((answer, index) => {
@@ -22,8 +21,6 @@ export const Summary = ({ userAnswers }) => {
     (correctAnswers.length / userAnswers.length) * 100
   );
   const incorrectAnswersShare = 100 - skippedAnswersShare - correctAnswersShare;
-
-  console.log("skipped answers", correctAnswers);
 
   return (
     <div id="summary">

@@ -40,8 +40,6 @@ export const Question = ({
     answerState = answer.isCorrect ? "correct" : "wrong";
   } else if (answer.selectedAnswer) answerState = "answered";
 
-  console.log("answer", answer);
-
   return (
     <div id="question">
       <QuestionTimer
